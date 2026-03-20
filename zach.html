@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zachary Profile</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:"Roboto",sans-serif;
+background:#0f1923;
+color:white;
+}
+
+/* NAVBAR */
+
+.top-bar{
+background:#ff4655;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:15px 0;
+box-shadow:0 2px 6px rgba(0,0,0,0.4);
+position:sticky;
+top:0;
+z-index:10;
+}
+
+.top-bar a{
+color:#fff;
+text-decoration:none;
+margin:0 25px;
+font-size:18px;
+font-weight:600;
+transition:.3s;
+}
+
+.top-bar a:hover{
+color:#0f1923;
+background:#fff;
+padding:8px 14px;
+border-radius:4px;
+transform:scale(1.1);
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:60px;
+padding:80px 10%;
+flex-wrap:wrap;
+background:linear-gradient(180deg,#141e28,#0f1923);
+}
+
+.hero img{
+width:320px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.6);
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.hero-text h1{
+font-family:"Orbitron";
+font-size:60px;
+color:#ff4655;
+margin-bottom:10px;
+}
+
+.hero-text p{
+color:#ccc;
+line-height:1.6;
+}
+
+/* TITLE */
+
+.section-title{
+text-align:center;
+font-family:"Orbitron";
+font-size:36px;
+color:#ff4655;
+margin:60px 0 30px;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+padding:0 10% 80px;
+}
+
+/* CARDS */
+
+.card{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,70,85,0.4);
+border-radius:15px;
+padding:25px;
+transition:.35s;
+box-shadow:0 8px 20px rgba(0,0,0,0.5);
+}
+
+.card:hover{
+transform:translateY(-8px) scale(1.03);
+box-shadow:0 10px 30px rgba(255,70,85,0.5);
+}
+
+.card h2{
+font-family:"Orbitron";
+color:#ff4655;
+margin-bottom:10px;
+font-size:22px;
+}
+
+.card p{
+color:#ddd;
+font-size:15px;
+line-height:1.6;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<div class="top-bar">
+<a href="index.html">Home</a>
+<a href="agent.html">Agents</a>
+</div>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<img src="zach.jpg">
+
+<div class="hero-text">
+<h1>Zachary</h1>
+<p>
+Zachary focuses on essential system components that help computers start,
+power up, and operate efficiently. His knowledge includes boot processes,
+power systems, browsers, and external storage technologies.
+</p>
+</div>
+
+</section>
+
+<h2 class="section-title">System Core Components</h2>
+
+<div class="grid">
+
+<div class="card">
+<h2>Bootloader</h2>
+<p>
+A bootloader is a program that loads the operating system when a computer
+starts. It prepares the system hardware and then transfers control to the
+operating system kernel.
+</p>
+</div>
+
+<div class="card">
+<h2>Power Supply Unit</h2>
+<p>
+The Power Supply Unit (PSU) converts electrical power from an outlet into
+usable power for computer components such as the motherboard, CPU,
+and graphics card.
+</p>
+</div>
+
+<div class="card">
+<h2>Web Browser</h2>
+<p>
+A web browser is software used to access and view websites on the internet.
+Examples include Google Chrome, Microsoft Edge, Firefox, and Safari.
+</p>
+</div>
+
+<div class="card">
+<h2>External Storage Devices</h2>
+<p>
+External storage devices are used to store and transfer data outside
+the computer. Examples include USB flash drives, external hard drives,
+and memory cards.
+</p>
+</div>
+
+<div class="card">
+<h2>BIOS / UEFI Settings</h2>
+<p>
+BIOS or UEFI is firmware stored on the motherboard that initializes
+hardware during startup and allows users to configure system settings
+such as boot order and hardware configuration.
+</p>
+</div>
+
+</div>
+
+</body>
+</html>

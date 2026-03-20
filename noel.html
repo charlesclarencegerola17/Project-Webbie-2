@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noel Profile</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:"Roboto",sans-serif;
+background:#0f1923;
+color:white;
+}
+
+/* NAVBAR */
+
+.top-bar{
+background:#ff4655;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:15px 0;
+box-shadow:0 2px 6px rgba(0,0,0,0.4);
+position:sticky;
+top:0;
+z-index:10;
+}
+
+.top-bar a{
+color:#fff;
+text-decoration:none;
+margin:0 25px;
+font-size:18px;
+font-weight:600;
+transition:.3s;
+}
+
+.top-bar a:hover{
+color:#0f1923;
+background:#fff;
+padding:8px 14px;
+border-radius:4px;
+transform:scale(1.1);
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:60px;
+padding:80px 10%;
+flex-wrap:wrap;
+background:linear-gradient(180deg,#141e28,#0f1923);
+}
+
+.hero img{
+width:320px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.6);
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.hero-text h1{
+font-family:"Orbitron";
+font-size:60px;
+color:#ff4655;
+margin-bottom:10px;
+}
+
+.hero-text p{
+color:#ccc;
+line-height:1.6;
+}
+
+/* TITLE */
+
+.section-title{
+text-align:center;
+font-family:"Orbitron";
+font-size:36px;
+color:#ff4655;
+margin:60px 0 30px;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+padding:0 10% 80px;
+}
+
+/* CARDS */
+
+.card{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,70,85,0.4);
+border-radius:15px;
+padding:25px;
+transition:.35s;
+box-shadow:0 8px 20px rgba(0,0,0,0.5);
+}
+
+.card:hover{
+transform:translateY(-8px) scale(1.03);
+box-shadow:0 10px 30px rgba(255,70,85,0.5);
+}
+
+.card h2{
+font-family:"Orbitron";
+color:#ff4655;
+margin-bottom:10px;
+font-size:22px;
+}
+
+.card p{
+color:#ddd;
+font-size:15px;
+line-height:1.6;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<div class="top-bar">
+<a href="index.html">Home</a>
+<a href="agent.html">Agents</a>
+</div>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<img src="Noel.png">
+
+<div class="hero-text">
+<h1>Noel</h1>
+<p>
+Noel specializes in system support technologies. His knowledge includes
+firmware, virtualization, cloud storage systems, and tools used to maintain
+and protect computer data.
+</p>
+</div>
+
+</section>
+
+<h2 class="section-title">System Support Technologies</h2>
+
+<div class="grid">
+
+<div class="card">
+<h2>Firmware</h2>
+<p>
+Firmware is a special type of software permanently stored in hardware devices.
+It provides low-level control for the device’s hardware and allows it to
+operate properly. Examples include BIOS and router firmware.
+</p>
+</div>
+
+<div class="card">
+<h2>Peripheral Devices</h2>
+<p>
+Peripheral devices are external hardware connected to a computer to extend
+its capabilities. Examples include printers, scanners, webcams, and external
+hard drives.
+</p>
+</div>
+
+<div class="card">
+<h2>Virtualization Software</h2>
+<p>
+Virtualization software allows multiple operating systems to run on one
+physical computer. Examples include VMware, VirtualBox, and Hyper-V.
+This technology is widely used in servers and cloud computing.
+</p>
+</div>
+
+<div class="card">
+<h2>Cloud Storage Services</h2>
+<p>
+Cloud storage allows users to store and access data through the internet.
+Examples include Google Drive, Dropbox, and OneDrive. It provides easy
+data access, sharing, and backup from anywhere.
+</p>
+</div>
+
+<div class="card">
+<h2>Multimedia Software</h2>
+<p>
+Multimedia software is used to create, edit, and play media content such as
+audio, video, and images. Examples include video editors, music players,
+and graphic design programs.
+</p>
+</div>
+
+<div class="card">
+<h2>Input/Output Controllers</h2>
+<p>
+Input and Output controllers manage communication between the computer’s
+processor and hardware devices like keyboards, printers, and storage
+devices. They ensure smooth data transfer between components.
+</p>
+</div>
+
+<div class="card">
+<h2>Backup & Recovery Software</h2>
+<p>
+Backup and recovery software protects data by creating copies of files
+and restoring them in case of system failure, data loss, or cyberattacks.
+Examples include system restore tools and backup utilities.
+</p>
+</div>
+
+</div>
+
+</body>
+</html>

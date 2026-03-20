@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valorant Agents</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #0f1923;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* Top Bar */
+    .top-bar {
+      background-color: #ff4655;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .top-bar a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 25px;
+      font-size: 18px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .top-bar a:hover {
+      color: #0f1923;
+      background-color: #fff;
+      padding: 8px 14px;
+      border-radius: 4px;
+      transform: scale(1.1);
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      padding: 80px 20px 40px;
+      background: linear-gradient(to bottom, #141e28 0%, #0f1923 100%);
+    }
+
+    .header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 60px;
+      color: #ff4655;
+      text-shadow: 2px 2px 10px rgba(255,70,85,0.8);
+    }
+
+    .agent-section {
+      padding: 40px 60px 80px;
+    }
+
+    .role-title {
+      font-family: 'Orbitron', sans-serif;
+      color: #ff4655;
+      margin: 40px 0 20px;
+      font-size: 32px;
+      text-align: center;
+    }
+
+    .agent-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    /* Agent Card */
+    .agent-card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      background-color: #1a2733;
+      border: 2px solid #ff4655;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      transition: 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+
+    .agent-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(255,70,85,0.5);
+    }
+
+    .agent-card img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-bottom: 2px solid #ff4655;
+    }
+
+    .agent-card h2 {
+      font-family: 'Orbitron', sans-serif;
+      color: #ff4655;
+      margin: 12px 0 6px;
+    }
+
+    .agent-card p {
+      padding: 0 12px 16px;
+      color: #ccc;
+      font-size: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <div class="top-bar">
+    <a href="index.html">Home</a>
+    <a href="agent.html">Agents</a>
+  </div>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Magpili Agents</h1>
+  </div>
+
+  <section class="agent-section">
+
+    <h2 class="role-title">Programmers</h2>
+
+    <div class="agent-grid">
+
+      <a href="charles.html" class="agent-card">
+        <img src="charles.jfif">
+        <h2>Charles</h2>
+        <p>Backburner.</p>
+      </a>
+
+      <a href="zach.html" class="agent-card">
+        <img src="zach.jpg">
+        <h2>Zachary</h2>
+        <p>Healer, pero 'di kayang i-heal sarili.</p>
+      </a>
+
+      <a href="matteo.html" class="agent-card">
+        <img src="Matteo.jpg">
+        <h2>Matteo</h2>
+        <p>"Pinaka Greenflag"</p>
+      </a>
+
+      <a href="ari.html" class="agent-card">
+        <img src="Ari.jpg">
+        <h2>Arianna</h2>
+        <p>Inlab.</p>
+      </a>
+
+      <a href="noel.html" class="agent-card">
+        <img src="Noel.png">
+        <h2>Noel</h2>
+        <p>"Hawak mo ang Beat".</p>
+      </a>
+
+      <a href="cian.html" class="agent-card">
+        <img src="cian.png">
+        <h2>Cian</h2>
+        <p>The Best Detective.</p>
+      </a>
+
+    </div>
+
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matteo Profile</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:"Roboto",sans-serif;
+background:#0f1923;
+color:white;
+}
+
+/* NAVBAR */
+
+.top-bar{
+background:#ff4655;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:15px 0;
+box-shadow:0 2px 6px rgba(0,0,0,0.4);
+position:sticky;
+top:0;
+z-index:10;
+}
+
+.top-bar a{
+color:#fff;
+text-decoration:none;
+margin:0 25px;
+font-size:18px;
+font-weight:600;
+transition:.3s;
+}
+
+.top-bar a:hover{
+color:#0f1923;
+background:#fff;
+padding:8px 14px;
+border-radius:4px;
+transform:scale(1.1);
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:60px;
+padding:80px 10%;
+flex-wrap:wrap;
+background:linear-gradient(180deg,#141e28,#0f1923);
+}
+
+.hero img{
+width:320px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.6);
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.hero-text h1{
+font-family:"Orbitron";
+font-size:60px;
+color:#ff4655;
+margin-bottom:10px;
+}
+
+.hero-text p{
+color:#ccc;
+line-height:1.6;
+}
+
+/* TITLE */
+
+.section-title{
+text-align:center;
+font-family:"Orbitron";
+font-size:36px;
+color:#ff4655;
+margin:60px 0 30px;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+padding:0 10% 80px;
+}
+
+/* CARDS */
+
+.card{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,70,85,0.4);
+border-radius:15px;
+padding:25px;
+transition:.35s;
+box-shadow:0 8px 20px rgba(0,0,0,0.5);
+}
+
+.card:hover{
+transform:translateY(-8px) scale(1.03);
+box-shadow:0 10px 30px rgba(255,70,85,0.5);
+}
+
+.card h2{
+font-family:"Orbitron";
+color:#ff4655;
+margin-bottom:10px;
+font-size:22px;
+}
+
+.card p{
+color:#ddd;
+font-size:15px;
+line-height:1.6;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<div class="top-bar">
+<a href="index.html">Home</a>
+<a href="agent.html">Agents</a>
+</div>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<img src="Matteo.jpg">
+
+<div class="hero-text">
+<h1>Matteo</h1>
+<p>
+Matteo focuses on common computer technologies used in everyday life.
+From personal computers and printers to productivity software and
+security tools, these technologies help people work efficiently
+and stay connected in the digital world.
+</p>
+</div>
+
+</section>
+
+<h2 class="section-title">Computer Technology Overview</h2>
+
+<div class="grid">
+
+<div class="card">
+<h2>Desktop Computer</h2>
+<p>
+A desktop computer is a personal computer designed to remain in one
+location. It usually consists of a monitor, keyboard, mouse, and
+system unit that contains the main hardware components.
+</p>
+</div>
+
+<div class="card">
+<h2>Laptop</h2>
+<p>
+A laptop is a portable computer that combines the screen, keyboard,
+touchpad, and internal hardware into one device. It allows users
+to work or study anywhere.
+</p>
+</div>
+
+<div class="card">
+<h2>Printer</h2>
+<p>
+A printer is an output device that produces physical copies of
+digital documents and images. Common types include inkjet
+printers and laser printers.
+</p>
+</div>
+
+<div class="card">
+<h2>Computer Network System</h2>
+<p>
+A computer network system connects multiple computers and devices
+so they can share data, resources, and internet access. Examples
+include local area networks (LAN) and wide area networks (WAN).
+</p>
+</div>
+
+<div class="card">
+<h2>Operating System</h2>
+<p>
+An operating system manages the hardware and software resources
+of a computer. It provides an interface for users and allows
+applications to run properly.
+</p>
+</div>
+
+<div class="card">
+<h2>Microsoft Excel</h2>
+<p>
+Microsoft Excel is a spreadsheet software used to organize,
+calculate, and analyze data. It allows users to create tables,
+charts, and formulas for data processing.
+</p>
+</div>
+
+<div class="card">
+<h2>Antivirus Software</h2>
+<p>
+Antivirus software protects computers from viruses, malware,
+and other cyber threats. It scans files and systems to detect
+and remove harmful programs.
+</p>
+</div>
+
+</div>
+
+</body>
+</html>
